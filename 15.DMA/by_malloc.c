@@ -7,6 +7,7 @@ int main()
     printf("how many memory you required : ");
     scanf("%d",&n);
     p=(int *)malloc(n*sizeof(int));
+    //malloc does not initilize the allocated bloack thus that block gets initialized with garbage value
     if(p==NULL)
     {
         printf("Insufficient memory");
@@ -19,6 +20,7 @@ int main()
         scanf("%d",p+i);
         sum=sum+*(p+i);
     }
+    //memory allocated my malloc() needs to be deallocated by calling free()
     free(p);//loacted in stdlib.h
     printf("Sum is : %d",sum);
     printf("\nAverage is : %f",(float)sum/n);
