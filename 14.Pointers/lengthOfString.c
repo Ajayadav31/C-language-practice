@@ -11,7 +11,8 @@ int main()
     {
         p++;
     }
-    printf("Length of String is : %d",(p-str)/sizeof(char));
+    printf("Length of String is : %d",p-str);
     //here pointe datatype is char which is 1 byte so divide by 1 not change answer
+    //rule for substraction of addresses-->whenever we substract 2 addresses or 2 pointer then we never get the actual answer of that sub rather the compiler divides the actual result with the size of datatype of pointer and then gives the result
     return 0;
 }
