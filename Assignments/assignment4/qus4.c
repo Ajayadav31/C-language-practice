@@ -1,0 +1,14 @@
+//WAP to swap values of two int variable
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    int temp;
+    printf("Before swapping a is : %d and b is : %d",a,b);
+    //swapping code
+    temp=a;
+    a=b;
+    b=temp;
+    printf("\nAfter swapping a is : %d and b is : %d",a,b);
+    return 0;
+}
